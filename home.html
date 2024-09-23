@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lap Time Comparison</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button onclick="window.location.href='race.html'">Race Results</button>
+
     <h1>Racer Lap Time Comparison</h1>
-    
+
     <div id="inputArea">
-        <h3>Enter Lap Times</h3>
-        <input type="text" id="playerName" placeholder="Racer Name">
-        <input type="number" id="lapTime" placeholder="Lap Time (seconds)">
-        <button onclick="addLap()">Add Lap Time</button>
+      <h3>Enter Lap Times</h3>
+      <input type="text" id="playerName" placeholder="Racer Name" />
+      <input type="number" id="lapTime" placeholder="Lap Time (seconds)" />
+      <button onclick="addLap()">Add Lap Time</button>
     </div>
 
     <h3>Lap Time List</h3>
     <table id="lapsTable">
-        <thead>
-            <tr>
-                <th>Racer</th>
-                <th>Lap Number</th>
-                <th>Time (seconds)</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
+      <thead>
+        <tr>
+          <th>Racer</th>
+          <th>Lap Number</th>
+          <th>Time (seconds)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
     </table>
 
     <button onclick="compareTimes()">Compare Lap Times</button>
 
     <div id="results">
-        <h3>Comparison Results</h3>
-        <p id="fastestLap"></p>
-        <p id="averageSpeed"></p>
+      <h3>Comparison Results</h3>
+      <p id="fastestLap"></p>
+      <p id="averageSpeed"></p>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
