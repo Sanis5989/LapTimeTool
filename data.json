@@ -1,0 +1,51 @@
+[
+  {
+    "racer": "Alex Johnson",
+    "bestLapTime": "00:45.623",
+    "totalTime": "15:23.456",
+    "position": 1,
+    "fastestSpeed": 68.5
+  },
+  {
+    "racer": "Sarah Lee",
+    "bestLapTime": "00:46.012",
+    "totalTime": "15:25.789",
+    "position": 2,
+    "fastestSpeed": 67.8
+  },
+  {
+    "racer": "Mike Chen",
+    "bestLapTime": "00:46.234",
+    "totalTime": "15:28.901",
+    "position": 3,
+    "fastestSpeed": 67.2
+  },
+  {
+    "racer": "Emma Wilson",
+    "bestLapTime": "00:46.789",
+    "totalTime": "15:32.345",
+    "position": 4,
+    "fastestSpeed": 66.9
+  },
+  {
+    "racer": "Carlos Rodriguez",
+    "bestLapTime": "00:47.123",
+    "totalTime": "15:35.678",
+    "position": 5,
+    "fastestSpeed": 66.5
+  },
+  {
+    "racer": "Liam O'Brien",
+    "bestLapTime": "00:47.456",
+    "totalTime": "15:38.901",
+    "position": 6,
+    "fastestSpeed": 66.1
+  },
+  {
+    "racer": "Yuki Tanaka",
+    "bestLapTime": "00:47.789",
+    "totalTime": "15:42.234",
+    "position": 7,
+    "fastestSpeed": 65.8
+  }
+]
