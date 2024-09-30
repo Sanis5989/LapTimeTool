@@ -9,7 +9,7 @@
   <body>
     <button onclick="window.location.href='race.html'">Race Results</button>
 
-    <h1>Racer Lap Time Comparison</h1>
+    <h1>Race details</h1>
 
     <label for="racerSelect">Select Racer:</label>
     <select id="racerSelect" onchange="displayLaps()">
@@ -17,10 +17,11 @@
     </select>
 
     <h3>Lap Time List</h3>
+    <h3>Selected Racer: <a id="selectedRacer" style="font-weight: bold;"></a></h3>
+    
     <table id="lapsTable">
-      <thead>
+      <thead >
         <tr>
-          <th>Racer</th>
           <th>Lap Number</th>
           <th>Time (seconds)</th>
           <th>Average Speed</th>
@@ -29,13 +30,44 @@
       <tbody></tbody>
     </table>
 
-    <button onclick="compareTimes()">Compare Lap Times</button>
+    <button onclick="moreStats()">More Stats</button>
 
     <div id="results">
-      <h3>Comparison Results</h3>
+      <h3>Satistics</h3>
       <p id="fastestLap"></p>
       <p id="averageSpeed"></p>
     </div>
+
+
+    <h1>Racer Lap Time Comparison</h1>
+
+    <label for="racer1Select">Select Racer 1:</label>
+    <select id="racer1Select" onchange="displayComparison()">
+      <option value="">-- Select Racer 1 --</option>
+    </select>
+
+    <label for="racer2Select">Select Racer 2:</label>
+    <select id="racer2Select" onchange="displayComparison()">
+      <option value="">-- Select Racer 2 --</option>
+    </select>
+
+
+    <table id="compareLapsTable">
+      <thead id="tableHeader" >
+        <tr>
+          <th>Lap Number</th>
+          <th>Racer 1: Lap Time (seconds)</th>
+          <th>Racer 1: Average Speed</th>
+          <th>Racer 2: Lap Time (seconds)</th>
+          <th>Racer 2: Average Speed</th>
+          <th>Time Difference (seconds)</th>
+          <th>Speed Difference</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+
 
     <script src="script.js"></script>
   </body>
