@@ -5,11 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lap Time Comparison</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: url("bg.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1,
+      h3 {
+        text-align: center;
+        color: #ff4757;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+
+      label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      select {
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      button {
+        background-color: #ff4757;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        color: #000;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 10px 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      button:hover {
+        background-color: #ff4757;
+      }
+
+      table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 2px solid #444;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      th {
+        background-color: #ff4757;
+        color: #000;
+        text-shadow: none;
+      }
+
+      tr:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      #results {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      #fastestLap,
+      #averageSpeed {
+        font-size: 18px;
+        margin: 5px 0;
+      }
+
+      @media (max-width: 768px) {
+        table,
+        th,
+        td {
+          font-size: 14px;
+        }
+
+        button {
+          width: 100%;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+      }
+    </style>
   </head>
   <body>
     <button onclick="window.location.href='race.html'">Race Results</button>
 
-    <h1>Race details</h1>
+    <h1>Race Details</h1>
 
     <label for="racerSelect">Select Racer:</label>
     <select id="racerSelect" onchange="displayLaps()">
@@ -35,7 +140,7 @@
     <button onclick="moreStats()">More Stats</button>
 
     <div id="results">
-      <h3>Satistics</h3>
+      <h3>Statistics</h3>
       <p id="fastestLap"></p>
       <p id="averageSpeed"></p>
     </div>
